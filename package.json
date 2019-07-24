@@ -1,0 +1,24 @@
+{
+  "name": "pr_01",
+  "version": "1.0.0",
+  "description": "Project setup:\r 1. create package.json (npm init)",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "prettier": "1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0"
+  },
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "lint-css": "stylelint 'sass/*.scss'",
+    "lint-js": "eslint dist/js/**",
+    "format": "prettier --write js/**",
+    "dev": "npm run sass && npm run lint-css && npm run eslint && npm run format"
+  }
+}
