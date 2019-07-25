@@ -1,3 +1,5 @@
+Mobile first.
+
 Project setup:
 1. create package.json (npm init);
 2. create node modules (npm i node-sass);

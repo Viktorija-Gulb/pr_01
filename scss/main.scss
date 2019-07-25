@@ -1,8 +1,25 @@
-$color-a: white;
+@import "config";
+@import "header";
 
-h1 {
-  color: blue;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-  background: grey;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.home-section {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  height: 80vh;
+  .overlay {
+    height: 100%;
+    background: $bg-opacity;
+  }
+}
+
+.content {
+  padding: 0 15px;
+  margin-top: 70px;
 }
