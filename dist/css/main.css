@@ -1,5 +1,6 @@
 .top-header {
-  background: #ffffff; }
+  background: #ffffff;
+  color: #000; }
   .top-header div {
     padding: 10px;
     text-align: center;
@@ -10,7 +11,7 @@
       font-weight: 600; }
 
 .nav-bar {
-  background: rgba(49, 49, 49, 0.8);
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   height: 70px;
   align-items: center;
@@ -44,11 +45,20 @@ body {
 .home-section {
   background: url(../img/bg.jpg);
   background-size: cover;
-  height: 80vh; }
+  color: #ffffff; }
   .home-section .overlay {
     height: 100%;
-    background: rgba(235, 235, 235, 0.6); }
+    background: rgba(27, 23, 23, 0.5); }
+  .home-section .before-title {
+    font-size: 14px;
+    letter-spacing: 1;
+    color: #19c880;
+    font-weight: 500; }
+  .home-section h1 {
+    font-weight: 500; }
 
 .content {
   padding: 0 15px;
   margin-top: 70px; }
+  .content p {
+    padding: 15px 0; }
