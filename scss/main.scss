@@ -9,6 +9,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+section {
+  padding: 0 15px;
+}
 .home-section {
   background: url(../img/bg.jpg);
   background-size: cover;
@@ -38,6 +41,8 @@ body {
   padding: 0 15px;
   margin-top: 70px;
 }
+
+// BUTTONS styles
 .btn {
   padding: 12px 40px;
   font-size: 12px;
@@ -45,9 +50,66 @@ body {
   color: $white-bg;
   text-transform: uppercase;
   background: transparent;
-  //cursor: pointer;
-  // @include easeOut;
-  // &.btn1:hover {
-  //   background: $green;
-  // }
+  font-weight: 700;
+  &.btn3 {
+    border-style: none;
+    color: $green;
+    padding: 12px 0;
+    margin-top: 20px;
+    i {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+}
+// end of BUTTONS styles
+
+.box {
+  padding: 40px 20px;
+  border-bottom: 1px solid $border-color;
+  i {
+    font-size: 56px;
+    color: $green;
+  }
+  &__title {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  &__text {
+    line-height: 1.5;
+  }
+}
+
+// ABOUT section
+.wrap {
+  padding: 40px 20px;
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+.stats {
+  &__content {
+    font-size: 60px;
+    color: $green;
+    margin: 30px 0;
+  }
+  &__smletter {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  &__comment {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $grey-text;
+    display: block;
+    font-weight: 500;
+  }
+}
+
+.video-wrap {
+  iframe {
+    width: 100%;
+  }
 }
