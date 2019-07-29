@@ -118,5 +118,27 @@ section {
 .icons {
   display: flex;
   div {
+    width: 80px;
+    height: 80px;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+  &__bullet {
+    width: 12px;
+    height: 12px;
+    border: 2px solid $grey-text;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
