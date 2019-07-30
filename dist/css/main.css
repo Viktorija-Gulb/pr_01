@@ -42,8 +42,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px; }
 
+h1,
+h2,
+h3 {
+  font-weight: 500; }
+
 section {
   padding: 0 15px; }
+  section:nth-child(odd) {
+    background: #f7f7f7; }
 
 .home-section {
   background: url(../img/bg.jpg);
@@ -56,8 +63,6 @@ section {
     font-size: 14px;
     letter-spacing: 1;
     color: #19c880;
-    font-weight: 500; }
-  .home-section h1 {
     font-weight: 500; }
   .home-section .btn-1 {
     margin-top: 40px; }
@@ -103,8 +108,7 @@ section {
 .wrap {
   padding: 40px 20px; }
   .wrap h1 {
-    font-size: 32px;
-    font-weight: 500; }
+    font-size: 32px; }
 
 .stats__content {
   font-size: 60px;
@@ -129,7 +133,10 @@ section {
   display: flex; }
   .icons div {
     width: 80px;
-    height: 80px; }
+    height: 80px;
+    opacity: 0.5; }
+    .icons div.active {
+      opacity: 1; }
     .icons div img {
       border-radius: 50%;
       width: 100%; }
@@ -146,3 +153,59 @@ section {
     margin-right: 10px; }
     .pagination__bullet:last-child {
       margin-right: 0; }
+    .pagination__bullet.active {
+      border-style: none;
+      background: #19c880; }
+
+.comments .comment {
+  display: none; }
+  .comments .comment.active {
+    display: block; }
+
+.courses__nav {
+  margin: 15px 0 40px 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none; }
+
+.courses .course {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 40px; }
+  .courses .course__img img {
+    width: 100%; }
+  .courses .course__info {
+    padding: 15px; }
+    .courses .course__info .title {
+      color: #383749;
+      margin: 15px 0; }
+    .courses .course__info .author {
+      margin-bottom: 20px; }
+      .courses .course__info .author span {
+        color: #c0c1cd;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 500; }
+        .courses .course__info .author span:first-child {
+          color: #19c880; }
+    .courses .course__info .bottom-block {
+      display: flex;
+      margin-bottom: 15px; }
+      .courses .course__info .bottom-block .votes {
+        color: #f3a90b;
+        font-size: 12px; }
+        .courses .course__info .bottom-block .votes span,
+        .courses .course__info .bottom-block .votes .not-fill {
+          color: #c0c1cd; }
+      .courses .course__info .bottom-block .price {
+        flex: 1; }
+        .courses .course__info .bottom-block .price span {
+          color: #c0c1cd; }
+          .courses .course__info .bottom-block .price span:first-child {
+            color: #19c880;
+            margin-right: 5px;
+            font-weight: bold; }
+          .courses .course__info .bottom-block .price span:last-child {
+            text-decoration: line-through; }
