@@ -1,5 +1,5 @@
 @import "config";
-@import "header";
+@import "nav";
 
 * {
   margin: 0;
@@ -56,6 +56,11 @@ section {
   text-transform: uppercase;
   background: transparent;
   font-weight: 700;
+  &.btn2 {
+    color: $grey-text;
+    display: block;
+    margin: auto;
+  }
   &.btn3 {
     border-style: none;
     color: $green;
