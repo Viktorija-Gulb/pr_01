@@ -25,7 +25,7 @@ section {
   background-size: cover;
   color: $white-bg;
   .overlay {
-    height: 100%;
+    min-height: 100%;
     background: $bg-opacity;
   }
   .before-title {
@@ -34,8 +34,9 @@ section {
     color: $green;
     font-weight: 500;
   }
-  .btn-1 {
+  .btn1 {
     margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 .text {
@@ -77,6 +78,9 @@ section {
 .box {
   padding: 40px 20px;
   border-bottom: 1px solid $border-color;
+  &:last-child {
+    border-bottom-style: none;
+  }
   i {
     font-size: 56px;
     color: $green;
@@ -126,6 +130,7 @@ section {
 //reviews section
 .icons {
   display: flex;
+  justify-content: space-between;
   div {
     width: 80px;
     height: 80px;
@@ -160,8 +165,10 @@ section {
   }
 }
 .comments {
+  text-align: center;
   .comment {
     display: none;
+    @extend .text;
     &.active {
       display: block;
     }

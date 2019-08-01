@@ -49,6 +49,8 @@
 //Footer
 .footer {
   padding: 0 15px;
+  overflow: hidden;
+  font-size: 14px;
   .list {
     list-style-type: none;
     margin: 0;
@@ -65,7 +67,7 @@
     color: $main-text-color;
   }
   &__main {
-    div {
+    > div {
       margin-bottom: 40px;
     }
     h3 {
@@ -76,7 +78,6 @@
         @extend .text;
       }
       .copyright {
-        font-size: 14px;
         color: $grey-text;
       }
     }
@@ -114,6 +115,18 @@
     }
   }
   &__bottom {
+    position: relative;
+    padding-top: 30px;
+    &::before {
+      content: "";
+      width: 150%;
+      height: 1px;
+      background: $border-color;
+      display: block;
+      position: absolute;
+      left: -36px;
+      top: 0;
+    }
     .block1 {
       display: flex;
       justify-content: space-between;
@@ -123,11 +136,16 @@
       }
     }
     .block2 {
+      color: $grey-text;
+      text-align: center;
       .list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        font-size: 14px;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          &:last-child {
+            margin: 0;
+          }
+        }
       }
     }
   }
