@@ -13,3 +13,6 @@ Project setup:
     add rules to .eslintrc
 6. add prettier 
     npm install --save-dev --save-exact prettier
+
+
+This is not a real website. It was created for learning purposes with the aim of improving existing skills.

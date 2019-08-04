@@ -19,6 +19,7 @@
     color: #19c880; }
 
 .nav-bar {
+  position: relative;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   height: 70px;
@@ -30,10 +31,20 @@
     margin: 0 0 5px 0;
     background: #ffffff; }
   .nav-bar .menu {
-    display: none; }
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(27, 23, 23, 0.9); }
     .nav-bar .menu ul {
-      list-style-type: none;
-      display: flex; }
+      list-style-type: none; }
+      .nav-bar .menu ul li {
+        padding: 15px; }
+    .nav-bar .menu.open {
+      display: block; }
 
 .footer {
   padding: 0 15px;
@@ -108,6 +119,10 @@
   margin: 0;
   box-sizing: border-box; }
 
+ul {
+  padding: 0;
+  margin: 0; }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px; }
@@ -127,7 +142,6 @@ section {
   background-size: cover;
   color: #ffffff; }
   .home-section .overlay {
-    min-height: 100%;
     background: rgba(27, 23, 23, 0.5); }
   .home-section .before-title {
     font-size: 14px;
