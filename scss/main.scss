@@ -23,6 +23,9 @@ section {
   &:nth-child(odd) {
     background: #f7f7f7;
   }
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
 }
 .home-section {
   background: url(../img/bg.jpg);
@@ -50,6 +53,9 @@ section {
 .content {
   padding: 0 15px;
   margin-top: 70px;
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
 }
 
 // BUTTONS styles
@@ -79,6 +85,21 @@ section {
 }
 // end of BUTTONS styles
 
+// Quick links section
+.quick-links {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .box {
+      &:nth-child(odd) {
+        border-right: 1px solid $border-color;
+      }
+      &:nth-child(3) {
+        border-bottom-style: none;
+      }
+    }
+  }
+}
 .box {
   padding: 40px 20px;
   border-bottom: 1px solid $border-color;
@@ -107,6 +128,11 @@ section {
   }
 }
 .stats {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
   &__content {
     font-size: 60px;
     color: $green;
@@ -128,6 +154,13 @@ section {
 .video-wrap {
   iframe {
     width: 100%;
+    height: 200px;
+    @media (min-width: 425px) {
+      height: 250px;
+    }
+    @media (min-width: 768px) {
+      height: 500px;
+    }
   }
 }
 
@@ -145,6 +178,15 @@ section {
     img {
       border-radius: 50%;
       width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    justify-content: center;
+    div {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -187,6 +229,13 @@ section {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+  }
+  &__content {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
   }
   .course {
     background: $white-bg;
