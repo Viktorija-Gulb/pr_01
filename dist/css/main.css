@@ -100,6 +100,18 @@
         color: #bb8950; }
       .footer__main .social .list li .fa-twitter {
         color: #49a7f3; }
+    @media (min-width: 768px) {
+      .footer__main .social .list {
+        justify-content: normal; }
+        .footer__main .social .list li {
+          margin-right: 15px; } }
+  @media (min-width: 768px) {
+    .footer__main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px; }
+      .footer__main > div {
+        padding: 20px; } }
   .footer__bottom {
     position: relative;
     padding-top: 30px; }
@@ -118,6 +130,10 @@
       margin-bottom: 20px; }
       .footer__bottom .block1 img {
         width: 49%; }
+      @media (min-width: 768px) {
+        .footer__bottom .block1 {
+          width: 250px;
+          margin: 0 auto 20px auto; } }
     .footer__bottom .block2 {
       color: #757686;
       text-align: center; }
@@ -310,6 +326,11 @@ section {
   justify-content: space-around;
   align-items: center;
   list-style: none; }
+  @media (min-width: 768px) {
+    .courses__nav {
+      justify-content: normal; }
+      .courses__nav li {
+        margin-right: 20px; } }
 
 @media (min-width: 768px) {
   .courses__content {
