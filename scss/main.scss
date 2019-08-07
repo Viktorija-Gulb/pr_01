@@ -32,8 +32,10 @@ section {
   background-size: cover;
   color: $white-bg;
   .overlay {
-    //min-height: 100%;
     background: $bg-opacity;
+    @media (min-width: 1024px) {
+      min-height: 65vh;
+    }
   }
   .before-title {
     font-size: 14px;
@@ -44,6 +46,11 @@ section {
   .btn1 {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 46px;
+    }
   }
 }
 .text {
@@ -56,6 +63,11 @@ section {
   @media (min-width: 768px) {
     padding: 0 40px;
   }
+  @media (min-width: 1024px) {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 // BUTTONS styles
@@ -67,6 +79,7 @@ section {
   text-transform: uppercase;
   background: transparent;
   font-weight: 700;
+  letter-spacing: 1;
   &.btn2 {
     color: $grey-text;
     display: block;
@@ -133,6 +146,12 @@ section {
 // ABOUT section
 .wrap {
   padding: 40px 20px;
+  @media (min-width: 1024px) {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+  }
   h1 {
     font-size: 32px;
   }
