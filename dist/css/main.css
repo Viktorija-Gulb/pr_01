@@ -217,10 +217,10 @@ section {
   background-size: cover;
   color: #ffffff; }
   .home-section .overlay {
-    background: rgba(27, 23, 23, 0.5); }
+    background: rgba(27, 23, 23, 0.7); }
     @media (min-width: 1024px) {
       .home-section .overlay {
-        min-height: 65vh; } }
+        min-height: 85vh; } }
   .home-section .before-title {
     font-size: 14px;
     letter-spacing: 1;
@@ -231,7 +231,9 @@ section {
     margin-bottom: 40px; }
   @media (min-width: 1024px) {
     .home-section h1 {
-      font-size: 46px; } }
+      font-size: 46px; }
+    .home-section .content {
+      margin-top: 20vh; } }
 
 .text, .footer__main .about p, .comments .comment {
   line-height: 1.5;
@@ -282,7 +284,10 @@ section {
 
 @media (min-width: 1024px) {
   .quick-links {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+    .quick-links .box:nth-child(1), .quick-links .box:nth-child(2) {
+      border-bottom-style: none;
+      border-right: 1px solid #ebebeb; } }
 
 .box {
   padding: 40px 20px;

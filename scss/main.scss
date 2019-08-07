@@ -33,8 +33,9 @@ section {
   color: $white-bg;
   .overlay {
     background: $bg-opacity;
+    //display: grid;
     @media (min-width: 1024px) {
-      min-height: 65vh;
+      min-height: 85vh;
     }
   }
   .before-title {
@@ -50,6 +51,9 @@ section {
   @media (min-width: 1024px) {
     h1 {
       font-size: 46px;
+    }
+    .content {
+      margin-top: 20vh;
     }
   }
 }
@@ -114,6 +118,13 @@ section {
   }
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
+    .box {
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom-style: none;
+        border-right: 1px solid $border-color;
+      }
+    }
   }
 }
 .box {
