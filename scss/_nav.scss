@@ -21,6 +21,12 @@
       border-right: 1px solid $border-color;
     }
   }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    .phone {
+      border-right: 1px solid #ebebeb;
+    }
+  }
 }
 .logo {
   flex: 1;
@@ -45,6 +51,9 @@
       margin: 0 0 5px 0;
       background: $white-bg;
     }
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
   .menu {
     display: none;
@@ -66,6 +75,17 @@
     &.open {
       display: block;
       @include easeOut;
+    }
+    @media (min-width: 1024px) {
+      display: block;
+      position: relative;
+      top: 0;
+      width: auto;
+      padding: 0;
+      background: none;
+      .list {
+        display: flex;
+      }
     }
   }
   @media (min-width: 768px) {
@@ -154,6 +174,12 @@
         padding: 20px;
       }
     }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      .links {
+        display: block;
+      }
+    }
   }
   &__bottom {
     position: relative;
@@ -191,6 +217,13 @@
             margin: 0;
           }
         }
+      }
+    }
+    @media (min-width: 1024px) {
+      display: flex;
+      .block1 {
+        margin-right: auto;
+        margin-left: 0;
       }
     }
   }

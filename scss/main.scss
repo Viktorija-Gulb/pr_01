@@ -99,24 +99,34 @@ section {
       }
     }
   }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .box {
   padding: 40px 20px;
   border-bottom: 1px solid $border-color;
+  display: grid;
   &:last-child {
     border-bottom-style: none;
   }
   i {
-    font-size: 56px;
+    font-size: 42px;
     color: $green;
   }
   &__title {
     margin: 20px 0;
     font-weight: 500;
     font-size: 22px;
+    align-self: start;
   }
   &__text {
     line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    align-self: end;
   }
 }
 
@@ -161,9 +171,33 @@ section {
     @media (min-width: 768px) {
       height: 500px;
     }
+    @media (min-width: 1024px) {
+      height: 350px;
+    }
   }
 }
-
+.about {
+  .wrap {
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-areas:
+        "a b "
+        "c b";
+      .about-text {
+        grid-area: a;
+      }
+      .video-wrap {
+        grid-area: b;
+        align-self: center;
+      }
+      .stats {
+        grid-area: c;
+      }
+    }
+  }
+}
 //reviews section
 .icons {
   display: flex;
@@ -220,8 +254,46 @@ section {
     }
   }
 }
+.reviews {
+  .wrap {
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-areas:
+        "a b "
+        "c b";
+      .icons {
+        grid-area: a;
+      }
+      .comments {
+        grid-area: b;
+      }
+      .pagination {
+        grid-area: c;
+      }
+    }
+  }
+}
 // Courses section
 .courses {
+  .wrap {
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-areas:
+        "a b "
+        "c c"
+        "d d";
+      h1 {
+        grid-area: a;
+      }
+      button {
+        grid-area: d;
+      }
+    }
+  }
   &__nav {
     margin: 15px 0 40px 0;
     padding: 0;
@@ -235,12 +307,21 @@ section {
         margin-right: 20px;
       }
     }
+    @media (min-width: 1024px) {
+      grid-area: b;
+      margin-right: 0;
+      margin-left: auto;
+    }
   }
   &__content {
     @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-area: c;
     }
   }
   .course {
