@@ -105,9 +105,12 @@
 
 //Footer
 .footer {
-  padding: 0 15px;
+  //padding: 0 15px;
   overflow: hidden;
   font-size: 14px;
+  .wrap {
+    padding: 40px 80px;
+  }
   .list {
     list-style-type: none;
     margin: 0;
@@ -202,17 +205,8 @@
   }
   &__bottom {
     position: relative;
-    padding-top: 30px;
-    &::before {
-      content: "";
-      width: 150%;
-      height: 1px;
-      background: $border-color;
-      display: block;
-      position: absolute;
-      left: -36px;
-      top: 0;
-    }
+    padding: 30px 80px 30px 80px;
+    border-top: 1px solid $border-color;
     .block1 {
       display: flex;
       justify-content: space-between;
@@ -222,7 +216,7 @@
       }
       @media (min-width: 768px) {
         width: 250px;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 0 auto;
       }
     }
     .block2 {
@@ -240,6 +234,7 @@
     }
     @media (min-width: 1024px) {
       display: flex;
+      align-items: center;
       .block1 {
         margin-right: auto;
         margin-left: 0;
