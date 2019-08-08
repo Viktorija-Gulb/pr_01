@@ -5,12 +5,42 @@
   color: $main-text-color;
   div {
     padding: 10px;
+    height: 40px;
     text-align: center;
     border-bottom: 1px solid $border-color;
+    @media (min-width: 768px) {
+      height: 45px;
+    }
     i {
       color: $green;
       margin-right: 12px;
       font-weight: 600;
+    }
+  }
+  .search {
+    display: flex;
+    padding: 0px;
+    input {
+      border-style: none;
+      padding: 10px;
+      background: $border-color;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      height: inherit;
+      @media (min-width: 1024px) {
+        text-align: left;
+      }
+    }
+    button {
+      border-style: none;
+      background: $green;
+      width: 40px;
+      height: inherit;
+      i {
+        margin: 0;
+        color: $white-bg;
+      }
     }
   }
   @media (min-width: 768px) {
@@ -45,6 +75,11 @@
   height: 70px;
   align-items: center;
   padding: 0 20px;
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
   .hamburger {
     div {
       width: 28px;
