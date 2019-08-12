@@ -9,6 +9,6 @@ $orange: #f3a90b;
 $bg-opacity: rgba(27, 23, 23, 0.7);
 $h3-title: #383749;
 
-@mixin easeOut {
-  transition: all 1s ease-out;
+@mixin easeInOut {
+  transition: all 500ms ease-in-out;
 }

@@ -47,6 +47,10 @@ section {
   .btn1 {
     margin-top: 40px;
     margin-bottom: 40px;
+    @include easeInOut;
+    &:hover {
+      background: $green;
+    }
   }
   @media (min-width: 1024px) {
     h1 {
@@ -55,9 +59,6 @@ section {
     .content {
       margin-top: 18vh;
       padding: 0 80px;
-    }
-    .btn1:hover {
-      background: $green;
     }
   }
 }
@@ -92,6 +93,7 @@ section {
     color: $grey-text;
     display: block;
     margin: auto;
+    @include easeInOut;
     @media (min-width: 1024px) {
       &:hover {
         background: $green;
