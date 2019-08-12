@@ -24,6 +24,8 @@
       text-align: center;
       font-size: 16px;
       height: inherit; }
+      .top-header .search input:focus {
+        background: #ffffff; }
       @media (min-width: 1024px) {
         .top-header .search input {
           text-align: left; } }
@@ -89,30 +91,38 @@
     background: rgba(27, 23, 23, 0.9);
     transition: all 500ms ease-in-out;
     transform: translate3d(-100%, 0, 0); }
-    .nav-bar .menu ul {
+    .nav-bar .menu .list {
       list-style-type: none;
       font-size: 26px; }
-      .nav-bar .menu ul li {
+      .nav-bar .menu .list li {
         padding: 15px; }
+        .nav-bar .menu .list li a {
+          text-decoration: none;
+          color: inherit; }
+          .nav-bar .menu .list li a:hover {
+            color: #19c880; }
     .nav-bar .menu.open {
       display: flex;
       transform: translate3d(0, 0, 0);
       transition: all 500ms ease-in-out; }
     .nav-bar .menu .close-btn {
       position: absolute;
+      width: 40px;
+      height: 40px;
       z-index: 3;
-      right: 35px;
-      top: 35px;
+      right: 25px;
+      top: 25px;
       cursor: pointer; }
       .nav-bar .menu .close-btn .btn-line {
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff; }
+        background: #fff;
+        position: absolute; }
         .nav-bar .menu .close-btn .btn-line:nth-child(1) {
-          transform: rotate(45deg) translate(0px, 5px); }
+          transform: rotate(45deg) translate(16px, 7px); }
         .nav-bar .menu .close-btn .btn-line:nth-child(2) {
-          transform: rotate(-45deg) translate(1px, -6px); }
+          transform: rotate(-45deg) translate(-7px, 16px); }
     @media (min-width: 768px) {
       .nav-bar .menu {
         display: block;
@@ -123,7 +133,9 @@
         background: none; }
         .nav-bar .menu .list {
           display: flex;
-          font-size: 16px; } }
+          font-size: 16px; }
+        .nav-bar .menu .close-btn {
+          display: none; } }
   @media (min-width: 768px) {
     .nav-bar {
       padding: 0 40px; } }
@@ -332,7 +344,8 @@ section {
     border-style: none;
     color: #19c880;
     padding: 12px 0;
-    margin-top: 20px; }
+    margin-top: 20px;
+    text-align: left; }
     .btn.btn3 i {
       font-size: 12px;
       margin-left: 5px; }
