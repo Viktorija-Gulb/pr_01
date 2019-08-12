@@ -113,8 +113,6 @@
       li {
         padding: 15px;
         a {
-          text-decoration: none;
-          color: inherit;
           &:hover {
             color: $green;
           }
@@ -180,7 +178,6 @@
 
 //Footer
 .footer {
-  //padding: 0 15px;
   overflow: hidden;
   font-size: 14px;
   .wrap {
@@ -195,10 +192,6 @@
     padding: 0;
     li {
       margin-bottom: 10px;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
     }
   }
   .logo {
