@@ -349,7 +349,7 @@ a {
       font-size: 12px;
       margin-left: 5px; }
 
-@media (min-width: 768px) {
+@media (min-width: 520px) {
   .quick-links {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -398,16 +398,21 @@ a {
   .wrap h1 {
     font-size: 32px; }
 
-@media (min-width: 768px) {
+@media (min-width: 520px) {
   .stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px; } }
 
+@media (min-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr); } }
+
 .stats__content {
   font-size: 60px;
   color: #19c880;
-  margin: 30px 0; }
+  margin: 30px 0;
+  padding: 10px; }
 
 .stats__smletter {
   font-size: 36px;
@@ -582,3 +587,7 @@ a {
             font-weight: bold; }
           .courses .course__info .bottom-block .price span:last-child {
             text-decoration: line-through; }
+
+.courses__active {
+  color: #19c880;
+  text-decoration: underline; }

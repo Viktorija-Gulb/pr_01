@@ -121,7 +121,7 @@ a {
 
 // Quick links section
 .quick-links {
-  @media (min-width: 768px) {
+  @media (min-width: 520px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     .box {
@@ -185,15 +185,19 @@ a {
   }
 }
 .stats {
-  @media (min-width: 768px) {
+  @media (min-width: 520px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
   }
   &__content {
     font-size: 60px;
     color: $green;
     margin: 30px 0;
+    padding: 10px;
   }
   &__smletter {
     font-size: 36px;
@@ -426,4 +430,8 @@ a {
       }
     }
   }
+}
+.courses__active {
+  color: $green;
+  text-decoration: underline;
 }
