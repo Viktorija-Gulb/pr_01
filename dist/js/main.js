@@ -7,4 +7,10 @@ $(document).ready(function() {
   $(".close-btn").click(function() {
     $(".nav-bar .menu").removeClass("open");
   });
+
+  // reviews
+  $(".icons div").click(function() {
+    $(this).toggleClass("active");
+    $(this).siblings.removeAttr("style");
+  });
 });
