@@ -37,7 +37,6 @@ a {
   color: $white-bg;
   .overlay {
     background: $bg-opacity;
-    //display: grid;
     @media (min-width: 1024px) {
       min-height: 85vh;
     }
@@ -80,6 +79,9 @@ a {
   @media (min-width: 1140px) {
     margin-right: auto;
     margin-left: auto;
+    //padding: 0 60px;
+  }
+  @media (min-width: 1230px) {
     padding: 0 40px;
   }
 }
