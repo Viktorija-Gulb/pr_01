@@ -60,10 +60,6 @@ a {
     h1 {
       font-size: 46px;
     }
-    .content {
-      margin-top: 18vh;
-      padding: 0 80px;
-    }
   }
 }
 .text {
@@ -74,12 +70,17 @@ a {
   padding: 0 15px;
   margin-top: 70px;
   @media (min-width: 768px) {
-    padding: 0 40px;
+    padding: 0 60px;
   }
   @media (min-width: 1024px) {
     max-width: 1140px;
+    margin-top: 18vh;
+    padding: 0 80px;
+  }
+  @media (min-width: 1140px) {
     margin-right: auto;
     margin-left: auto;
+    padding: 0 40px;
   }
 }
 

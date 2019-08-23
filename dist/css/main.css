@@ -136,7 +136,7 @@
           display: none; } }
   @media (min-width: 768px) {
     .nav-bar {
-      padding: 0 40px; } }
+      padding: 0 60px; } }
   @media (min-width: 1024px) {
     .nav-bar .nav-wrap {
       display: flex;
@@ -300,10 +300,7 @@ a {
       background: #19c880; }
   @media (min-width: 1024px) {
     .home-section h1 {
-      font-size: 46px; }
-    .home-section .content {
-      margin-top: 18vh;
-      padding: 0 80px; } }
+      font-size: 46px; } }
 
 .text, .footer__main .about p, .comments .comment {
   line-height: 1.5;
@@ -314,12 +311,17 @@ a {
   margin-top: 70px; }
   @media (min-width: 768px) {
     .content {
-      padding: 0 40px; } }
+      padding: 0 60px; } }
   @media (min-width: 1024px) {
     .content {
       max-width: 1140px;
+      margin-top: 18vh;
+      padding: 0 80px; } }
+  @media (min-width: 1140px) {
+    .content {
       margin-right: auto;
-      margin-left: auto; } }
+      margin-left: auto;
+      padding: 0 40px; } }
 
 .btn {
   padding: 12px 40px;
