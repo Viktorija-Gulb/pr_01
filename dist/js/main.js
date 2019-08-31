@@ -10,7 +10,9 @@ $(document).ready(function() {
 
   // reviews
   $(".icons div").click(function() {
-    $(this).toggleClass("active");
-    $(this).siblings.removeAttr("style");
+    $(".icons div").removeClass("active");
+    $(this).addClass("active");
+
+    event.preventDefault();
   });
 });
