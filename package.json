@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Project setup:\r 1. create package.json (npm init)",
   "main": "index.js",
-  "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/Viktorija-Gulb/pr_01",
   "dependencies": {
     "node-sass": "^4.12.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "1.4.1",
     "prettier": "1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0"
@@ -19,6 +19,7 @@
     "lint-css": "stylelint 'sass/*.scss'",
     "lint-js": "eslint dist/js/**",
     "format": "prettier --write js/**",
-    "dev": "npm run sass && npm run lint-css && npm run eslint && npm run format"
+    "dev": "npm run sass && npm run lint-css && npm run eslint && npm run format",
+    "deploy": "gh-pages -d dist"
   }
 }
