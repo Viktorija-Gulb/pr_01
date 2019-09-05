@@ -4,7 +4,7 @@
   "description": "Project setup:\r 1. create package.json (npm init)",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://viktorija-gulb.github.io/Viktorija-Gulb/pr_01",
+  "homepage": "https://viktorija-gulb.github.io/pr_01",
   "dependencies": {
     "node-sass": "^4.12.0"
   },
