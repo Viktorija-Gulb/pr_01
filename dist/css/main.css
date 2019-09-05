@@ -310,7 +310,7 @@ a {
     .home-section h1 {
       font-size: 46px; } }
 
-.text, .footer__main .about p, .comments .comment {
+.text, .footer__main .about p {
   line-height: 1.5;
   padding: 15px 0; }
 
@@ -332,6 +332,9 @@ a {
   @media (min-width: 1230px) {
     .content {
       padding: 0 40px; } }
+  .content .list {
+    line-height: 1.5;
+    margin-left: 40px; }
 
 .btn {
   padding: 12px 40px;
@@ -517,9 +520,22 @@ a {
 .comments {
   text-align: center; }
   .comments .comment {
-    display: none; }
+    display: none;
+    line-height: 1.5; }
     .comments .comment.active {
       display: block; }
+
+.reviews .wrap .comment__text {
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+.reviews .wrap .comment__author {
+  color: #19c880;
+  font-size: 18px;
+  text-transform: uppercase; }
+  .reviews .wrap .comment__author span {
+    color: #c0c1cd;
+    text-transform: none; }
 
 @media (min-width: 1024px) {
   .reviews .wrap {
@@ -530,7 +546,8 @@ a {
     .reviews .wrap .icons {
       grid-area: a; }
     .reviews .wrap .comments {
-      grid-area: b; }
+      grid-area: b;
+      text-align: left; }
     .reviews .wrap .pagination {
       grid-area: c; } }
 
@@ -567,7 +584,7 @@ a {
   .courses__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; } }
+    grid-gap: 30px; } }
 
 @media (min-width: 1024px) {
   .courses__content {

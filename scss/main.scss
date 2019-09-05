@@ -84,6 +84,10 @@ a {
   @media (min-width: 1230px) {
     padding: 0 40px;
   }
+  .list {
+    line-height: 1.5;
+    margin-left: 40px;
+  }
 }
 
 // BUTTONS styles
@@ -317,7 +321,7 @@ a {
   text-align: center;
   .comment {
     display: none;
-    @extend .text;
+    line-height: 1.5;
     &.active {
       display: block;
     }
@@ -325,6 +329,21 @@ a {
 }
 .reviews {
   .wrap {
+    .comment {
+      &__text {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      &__author {
+        color: $green;
+        font-size: 18px;
+        text-transform: uppercase;
+        span {
+          color: $light-grey-text;
+          text-transform: none;
+        }
+      }
+    }
     @media (min-width: 1024px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -337,6 +356,7 @@ a {
       }
       .comments {
         grid-area: b;
+        text-align: left;
       }
       .pagination {
         grid-area: c;
@@ -386,7 +406,7 @@ a {
     @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
+      grid-gap: 30px;
     }
     @media (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);

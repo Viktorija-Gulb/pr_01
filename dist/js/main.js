@@ -11,8 +11,6 @@ $(document).ready(function() {
   // reviews
   $(".icons div").click(function() {
     $(".icons div").removeClass("active");
-    $('pagination__bullet').removeClass('active');
-    
     $(this).addClass("active");
 
     event.preventDefault();
