@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Website" content="web development, programming courses, online courses">
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
       rel="stylesheet"
@@ -22,7 +24,7 @@
             <div class="phone"><i class="fas fa-phone"></i>001-1234-88888</div>
             <div class="search">
               <input type="text" placeholder="Search.." />
-              <button><i class="fas fa-search"></i></button>
+              <button aria-label="search"><i class="fas fa-search"></i></button>
             </div>
             <div class="login">Register/Login</div>
           </div>
@@ -59,10 +61,11 @@
           </p>
           <ul class="list">
             <li>try to set up project using modern tools like stylelint, eslint and prettier</li>
+            <li>try to start project from mobile first</li>
             <li>renew knowledge of HTML, SASS</li>
             <li>learn more about <span>display:grid</span> and <span>display:flex</span> properties</li>
           </ul>
-          <button class="btn btn1">Read more</button>
+          <button class="btn btn1" aria-label="read more">Read more</button>
         </div>
       </div>
     </div>
@@ -75,10 +78,8 @@
           freeCodeCamp.org is a tiny non-profit that's helping millions of
           people learn to code for free.
         </p>
-        <button class="btn btn3">
-          <a href="https://learn.freecodecamp.org/" target="_blank"
-            >Read more <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
+        <button class="btn btn3" type="button" onClick="window.open('https://learn.freecodecamp.org/');" aria-label="read more" rel="noopener">
+          Read more <i class="fas fa-long-arrow-alt-right"></i>
         </button>
       </div>
       <div class="box">
@@ -89,12 +90,8 @@
           personalized learning dashboard that empower learners to study at
           their own pace in and outside of the classroom.
         </p>
-        <button class="btn btn3">
-          <a
-            href="https://www.khanacademy.org/profile/VikNov/courses"
-            target="_blank"
-            >Read more <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
+        <button class="btn btn3" type="button" onClick="window.open('https://www.khanacademy.org/profile/VikNov/courses');" aria-label="read more" rel="noopener">
+          Read more <i class="fas fa-long-arrow-alt-right"></i>
         </button>
       </div>
       <div class="box">
@@ -106,12 +103,8 @@
           of front-end engineering: how to learn it and what tools are used when
           practicing it in 2019.
         </p>
-        <button class="btn btn3">
-          <a
-            href="https://frontendmasters.com/books/front-end-handbook/2019/?fbclid=IwAR01Rni6sVECzi60zy-Wz5l6eI0apuctLCu5R0Y5eblIzp0yO6vg5HAWaSs#6.9"
-            target="_blank"
-            >Read more <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
+        <button class="btn btn3" type="button" onClick="window.open('https://frontendmasters.com/books/front-end-handbook/2019/?fbclid=IwAR01Rni6sVECzi60zy-Wz5l6eI0apuctLCu5R0Y5eblIzp0yO6vg5HAWaSs#6.9');" aria-label="read more" rel="noopener">
+          Read more <i class="fas fa-long-arrow-alt-right"></i>
         </button>
       </div>
       <div class="box">
@@ -121,12 +114,8 @@
           How it's done now. From the basics to advanced topics with simple, but
           detailed explanations.
         </p>
-        <button class="btn btn3">
-          <a
-            href="https://javascript.info/?fbclid=IwAR08T0rxIFIqooG86XPvdrfsXTb0IzLvZzI-q8qW1gaDoGjy1kMN3mRNniM"
-            target="_blank"
-            >Read more <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
+        <button class="btn btn3" type="button" onClick="window.open('https://javascript.info/?fbclid=IwAR08T0rxIFIqooG86XPvdrfsXTb0IzLvZzI-q8qW1gaDoGjy1kMN3mRNniM');" aria-label="read more" rel="noopener">
+          Read more <i class="fas fa-long-arrow-alt-right"></i>
         </button>
       </div>
     </section>
@@ -160,9 +149,9 @@
         <div class="video-wrap">
           <iframe
             src="https://www.youtube.com/embed/rJesac0_Ftw"
-            frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            title="video"
           ></iframe>
         </div>
       </div>
@@ -313,7 +302,6 @@
         <button class="btn btn2">View all courses</button>
       </div>
     </section>
-    <section class="news"></section>
     <footer class="footer" id="contact">
       <div class="wrap">
         <div class="footer__main">

@@ -1,4 +1,7 @@
+This is not a real website. It was created for learning purposes.
+
 Mobile first.
+Optimize images with tinypng.com
 
 Project setup:
 1. create package.json (npm init);
@@ -7,12 +10,11 @@ Project setup:
 4. add stylelint: 
     npm install stylelint --save-dev
     npm install stylelint-config-recommended --save-dev
-    add rules to .stylelintrc
+    add rules to .stylelintrc file
 5.add eslint
     npm install eslint --save-dev
-    add rules to .eslintrc
+    add rules to .eslintrc file
 6. add prettier 
     npm install --save-dev --save-exact prettier
 
-
-This is not a real website. It was created for learning purposes with the aim of improving existing skills.
+run all tools: npm run dev
