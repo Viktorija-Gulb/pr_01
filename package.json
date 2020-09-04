@@ -6,7 +6,7 @@
   "license": "ISC",
   "homepage": "https://viktorija-gulb.github.io/pr_01",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "eslint": "1.4.1",
